@@ -1,4 +1,6 @@
-#Calculating the price of a product and tax
+##kosar shafaei_ yazdahom_ nicandishan##
+
+#Exeercise (page 15)
 price = float(input("Enter product price: "))
 tax = price * 0.09
 total = price + tax
