@@ -64,3 +64,19 @@ user["age"] = input("please enter your age: ")
 user["password"] = input("please enter your passwprd: ")
 
 print(user)
+
+#Exercise (page 56)
+invenroty = {
+    "bag" : 5,
+    "ball" : 8,
+    "laptop" : 3,
+    "mouse" : 10, 
+    "flash memory" :14
+}
+if "bag" in invenroty:
+    print("there is bag in items.")
+    invenroty_value = invenroty.pop("bag")
+    print("item removed: ", invenroty_value)
+else:
+    print("there is no bag.")
+print(invenroty)
