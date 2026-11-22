@@ -1,4 +1,4 @@
-# #kosar shafaei_ yazdahom_ nicandishan##
+# ##kosar shafaei_ yazdahom_ nicandishan##
 
 # #Exeercise (page 15)
 # price = float(input("Enter product price: "))
@@ -236,7 +236,28 @@
 # score2 = int(input("Enter score 2:"))
 # print(num_diff(score1, score2))
 
-#Exercise (page 73)
-cities = ["Mashhad", "Tehran", "Shiraz", "Esfahan"]
-sorted(cities, reverse=True)
-print(sorted(cities))
+# #Exercise (page 73)
+# cities = ["Mashhad", "Tehran", "Shiraz", "Esfahan"]
+# sorted(cities, reverse=True)
+# print(sorted(cities))
+
+# #exercise (page76-1)
+# from datetime import datetime
+
+# now = datetime.now()
+# print("current year: ", now.year)
+
+#Exercise(page76-2)
+import random
+secret_number = random.randint(1, 10)
+attemps = 0
+while True:
+    guess = int(input("guess a number:"))
+    attemps+=1
+    if guess == secret_number:
+        print("you win!")
+        break
+    else:
+        print("you lose!")
+
+print(f"ypur guessed the number in {attemps} attemp(s).")
